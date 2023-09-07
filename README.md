@@ -23,8 +23,8 @@ https://voca.ro/1b3zsW87y7nY
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Instructions:  
-(`<br>`)  
+Instructions:    
+  
 Making predictions with the model  
 Notes:  
 The model will run substantially faster with a CUDA enabled NVIDIA GPU
@@ -34,13 +34,12 @@ The length of audio which the model can handle will be depandant on how much sys
 2. run the following commands to set up needed libraries:
    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
    pip install -r requirements.txt
-3. in 'Audio_Denoiser.ipynb' set variable 'input_song' to the path of your input song then run all cells!
-(`<br>`)  
-(`<br>`)  
+3. in 'Audio_Denoiser.ipynb' set variable 'input_song' to the path of your input song then run all cells!  
+  
   
 Training the model:  
-Notes: training will require a CUDA enabled NVIDIA GPU
-
+Notes: training will require a CUDA enabled NVIDIA GPU  
+  
 1. follow all above set up steps
 2. use file 'Audio_Training_Data_Gen.ipynb' to create a data set by placing your training songs into a folder then passing the path to variable 'source_folder'
 3. create a folder for the generated training data and set it to variable 'output_folder'
