@@ -12,7 +12,7 @@ From there we detect noise using filters which work by calculating the dot produ
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Vocaroo links for sample output (non-copyrighted):
+Vocaroo links for sample output (non-copyrighted):  
 Note: this song was not used in training so this is a more true test of the model's performance
 
 Noisy input:
@@ -23,7 +23,7 @@ https://voca.ro/1b3zsW87y7nY
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Instructions: Making predictions with the model
+Instructions: Making predictions with the model  
 Notes: The model will run substantially faster with a CUDA enabled NVIDIA GPU
        The length of audio which the model can handle will be depandant on how much system memory/VRAM your computer has equipped
        
@@ -34,7 +34,7 @@ Notes: The model will run substantially faster with a CUDA enabled NVIDIA GPU
 3. in 'Audio_Denoiser.ipynb' set variable 'input_song' to the path of your input song then run all cells!
 
 
-Training the model:
+Training the model:  
 Notes: training will require a CUDA enabled NVIDIA GPU
 
 1. follow all above set up steps
@@ -46,11 +46,11 @@ Notes: training will require a CUDA enabled NVIDIA GPU
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Next steps:
-1. Architecture:
+Next steps:  
+1. Architecture:  
 The overarching architecture of the model simply modifies images which happen to be audio, as such we can use many different architectures to achieve the same result. I've experimented with Variational CNN autoencoders but ran into memory   issues as nn.Linear() layers connected to every number in the latent space requires massive computation and RAM resources. Alternatively NVIDIA wrote a promising paper on their 'StyleGAN' architecture which people have been having success with and I want to further research and implement into my denoising application.
 
-2. Dataloading:
+2. Dataloading:  
 Currently the model was trained in a suboptimal way using transfer learning from previous training data batches running thousands of epochs each time. This leaves the model prone to learning the training data too well to make predictions on other songs or 'overfitting'. By using standard data loading tools the training data would be shuffled in thus preventing overfitting.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
