@@ -15,17 +15,18 @@ From there we detect noise using filters which work by calculating the dot produ
 Vocaroo links for sample output (non-copyrighted):  
 Note: this song was not used in training so this is a more true test of the model's performance
 
-Noisy input:
+Noisy input:  
 https://voca.ro/19e5S1FPDlNj
 
-Cleaned output:
+Cleaned output:  
 https://voca.ro/1b3zsW87y7nY
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Instructions: Making predictions with the model  
-Notes: The model will run substantially faster with a CUDA enabled NVIDIA GPU
-       The length of audio which the model can handle will be depandant on how much system memory/VRAM your computer has equipped
+Notes:  
+The model will run substantially faster with a CUDA enabled NVIDIA GPU
+The length of audio which the model can handle will be depandant on how much system memory/VRAM your computer has equipped
        
 1. set up a Python 3.9 environment
 2. run the following commands to set up needed libraries:
