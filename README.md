@@ -53,7 +53,7 @@ Notes: training will require a CUDA enabled NVIDIA GPU
 
 Next steps:  
 1. Architecture:  
-The overarching architecture of the model simply modifies images which happen to be audio, as such we can use many different architectures to achieve the same result. I've experimented with Variational CNN autoencoders but ran into memory   issues as nn.Linear() layers connected to every number in the latent space requires massive computation and RAM resources. Alternatively NVIDIA wrote a promising paper on their 'StyleGAN' architecture which people have been having success with and I want to further research and implement into my denoising application.
+The overarching architecture of the model simply modifies images which happen to be audio, as such we can use many different architectures to achieve the same result. I've experimented with variational CNN autoencoders but ran into memory   issues as taking mean and standard deviation samples from a large latent space using nn.Linear() on every number in the latent space is very computationally expensive. Alternatively NVIDIA wrote a promising paper on their 'StyleGAN' architecture which people have been having success with and want to further research and implement into my denoising application.
 
 2. Dataloading:  
 Currently the model was trained in a suboptimal way using transfer learning from previous training data batches running thousands of epochs each time. This leaves the model prone to learning the training data too well to make predictions on other songs or 'overfitting'. By using standard data loading tools the training data would be shuffled in thus preventing overfitting.
