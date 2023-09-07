@@ -23,7 +23,9 @@ https://voca.ro/1b3zsW87y7nY
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Instructions: Making predictions with the model  
+Instructions:  
+Making predictions with the model  
+  
 Notes:  
 The model will run substantially faster with a CUDA enabled NVIDIA GPU
 The length of audio which the model can handle will be depandant on how much system memory/VRAM your computer has equipped
@@ -33,8 +35,8 @@ The length of audio which the model can handle will be depandant on how much sys
    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
    pip install -r requirements.txt
 3. in 'Audio_Denoiser.ipynb' set variable 'input_song' to the path of your input song then run all cells!
-
-
+  
+  
 Training the model:  
 Notes: training will require a CUDA enabled NVIDIA GPU
 
