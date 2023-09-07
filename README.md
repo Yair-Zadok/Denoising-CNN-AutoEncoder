@@ -16,10 +16,10 @@ Vocaroo links for sample output (non-copyrighted):
 Note: this song was not used in training so this is a more true test of the model's performance
 
 Noisy input:
-[a link](https://voca.ro/19e5S1FPDlNj)
+https://voca.ro/19e5S1FPDlNj
 
 Cleaned output:
-[a link](https://voca.ro/1b3zsW87y7nY)
+https://voca.ro/1b3zsW87y7nY
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
