@@ -38,6 +38,7 @@ The length of audio which the model can handle will be depandant on how much sys
   
   
 Training the model:  
+  
 Notes: training will require a CUDA enabled NVIDIA GPU
 
 1. follow all above set up steps
